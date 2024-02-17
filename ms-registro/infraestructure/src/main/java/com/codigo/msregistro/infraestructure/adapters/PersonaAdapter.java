@@ -104,6 +104,7 @@ public class PersonaAdapter implements PersonaServiceOut {
         personaActualizar.setApeMat(reniec.getApellidoMaterno());
         personaActualizar.setUsuaModif(Constants.AUDIT_ADMIN);
         personaActualizar.setDateModif(getTimestamp());
+        personaActualizar.setNumDocu(reniec.getNumeroDocumento());
         return personaActualizar;
     }
     private Timestamp getTimestamp(){

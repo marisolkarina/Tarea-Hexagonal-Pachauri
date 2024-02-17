@@ -106,6 +106,7 @@ public class EmpresaAdapter implements EmpresaServiceOut {
         empresaActualizar.setNomComercial(sunat.getRazonSocial());
         empresaActualizar.setUsuaModif(Constants.AUDIT_ADMIN);
         empresaActualizar.setDateModif(getTimestamp());
+        empresaActualizar.setNumDocu(sunat.getNumeroDocumento());
         return empresaActualizar;
     }
 
